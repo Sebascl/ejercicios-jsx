@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta name="author" content="Sebastián Ladino Cano">
+    <meta name="keywords" content="html, examples, homework ">
+    <meta name="description" content="Punto 5">
+    <title></title>
+</head>
+
+<body>
+    <div id="root">
+    </div>
+    <script src="https://unpkg.com/react@16/umd/react.development.js"></script>
+    <script src="https://unpkg.com/react-dom@16/umd/react-dom.development.js"></script>
+    <script src="https://unpkg.com/babel-standalone@6/babel.min.js"></script>
+    <script type="text/babel">
+
+        const data = {
+            title_1: "Página inicial de Juan Tuesta",
+            title_2: "Enlaces favoritos",
+            title_3: "Páginas personales",
+            title_4: "Páginas de referencia",
+            title_5: "Portales",
+            title_6: "Publicaciones",
+            paragraph_1: "Bienvenido a mi página personal. Soy un alumno de la Universidad de Deusto y esta es mi página inicial, con la lista de mis enlaces favoritos y otra información de interés",
+            paragraph_2: "Juan Tuesta, Universidad de Deusto, marzo 2002.",
+            paragraph_3: "Páginas personales",
+            paragraph_4: "Páginas de referencia",
+            paragraph_5: "Portales",
+            paragraph_6: "Publicaciones",
+            paragraph_7: "Documentalistas",
+            paragraph_8: "Historiadores",
+            paragraph_9: "Lingüistas",
+            paragraph_10: "Traductores",
+            paragraph_11: "Bibliotecas universitarias",
+            paragraph_12: "Centros de documentación",
+            paragraph_13: "Museos de arte contemporáneo",
+            paragraph_14: "Medios de comunicación",
+            paragraph_15: "Inicia",
+            paragraph_16: "Telépolis",
+            paragraph_17: "Ciudades",
+            paragraph_18: "Terra",
+            paragraph_19: "Ciberp@ís",
+            paragraph_20: "Diario Tecnologías de la Información",
+            paragraph_21: "The Standard",
+            paragraph_22: "Infoworld",
+            paragraph_23: "Wired",
+            paragraph_24: "Charkes F.Golfarb",
+            paragraph_25: "Lou Burnard",
+            paragraph_26: "Tim Berners-Lee",
+        }
+        const title_x = <h1>{data.title_1}</h1>;
+        const subtitle_x = <h2>{data.title_2}</h2>;
+        const subtitle_2x = <h2>{data.title_3}</h2>;
+        const subtitle_3x = <h2>{data.title_4}</h2>;
+        const subtitle_4x = <h2>{data.title_5}</h2>;
+        const subtitle_5x = <h2>{data.title_6}</h2>;
+        const paragraph_x = <p>{data.paragraph_1}</p>;
+        const paragraph_2x = <p><i>{data.paragraph_2}</i></p>;
+        const paragraph_3x = <p>{data.paragraph_3}</p>;
+        const paragraph_4x = <p>{data.paragraph_4}</p>;
+        const paragraph_5x = <p>{data.paragraph_5}</p>;
+        const paragraph_6x = <p>{data.paragraph_6}</p>;
+        const paragraph_7x = <p>{data.paragraph_7}</p>;
+        const paragraph_8x = <p>{data.paragraph_8}</p>;
+        const paragraph_9x = <p>{data.paragraph_9}</p>;
+        const paragraph_10x = <p>{data.paragraph_10}</p>;
+        const paragraph_11x = <p>{data.paragraph_11}</p>;
+        const paragraph_12x = <p>{data.paragraph_12}</p>;
+        const paragraph_13x = <p>{data.paragraph_13}</p>;
+        const paragraph_14x = <p>{data.paragraph_14}</p>;
+        const paragraph_15x = <p>{data.paragraph_15}</p>;
+        const paragraph_16x = <p>{data.paragraph_16}</p>;
+        const paragraph_17x = <p>{data.paragraph_17}</p>;
+        const paragraph_18x = <p>{data.paragraph_18}</p>;
+        const paragraph_19x = <p>{data.paragraph_19}</p>;
+        const paragraph_20x = <p>{data.paragraph_20}</p>;
+        const paragraph_21x = <p>{data.paragraph_21}</p>;
+        const paragraph_22x = <p>{data.paragraph_22}</p>;
+        const paragraph_23x = <p>{data.paragraph_23}</p>;
+        const paragraph_24x = <p>{data.paragraph_24}</p>;
+        const paragraph_25x = <p>{data.paragraph_25}</p>;
+        const paragraph_26x = <p>{data.paragraph_26}</p>;
+
+        const element = (
+            <div>
+                {title_x}
+                {paragraph_x}
+                {subtitle_x}
+                <ol>
+                    <li><a href="">{paragraph_3x}</a></li>
+                    <li>{paragraph_4x}</li>
+                    <li>{paragraph_5x}</li>
+                    <li>{paragraph_6x}</li>
+                </ol>
+                <hr></hr>
+
+                {subtitle_2x}
+                <ol>
+                    <li>{paragraph_7x}</li>
+                    <ul>
+                        <li>{paragraph_24x}</li>
+                        <li>{paragraph_25x}</li>
+                        <li>{paragraph_26x}</li>
+                    </ul>
+                    <li>{paragraph_8x}</li>
+                    <li>{paragraph_9x}</li>
+                    <li>{paragraph_10x}</li>
+                </ol>
+                <hr></hr>
+
+                {subtitle_3x}
+                <ol>
+                    <li>{paragraph_11x}</li>
+                    <li>{paragraph_12x}</li>
+                    <li>{paragraph_13x}</li>
+                    <li>{paragraph_14x}</li>
+                </ol>
+                <hr></hr>
+
+                {subtitle_4x}
+                <ol>
+                    <li>{paragraph_15x}</li>
+                    <li>{paragraph_16x}</li>
+                    <li>{paragraph_17x}</li>
+                    <li>{paragraph_18x}</li>
+                </ol>
+                <hr></hr>
+
+                {subtitle_5x}
+                <ol>
+                    <li>{paragraph_19x}</li>
+                    <li>{paragraph_20x}</li>
+                    <li>{paragraph_21x}</li>
+                    <li>{paragraph_22x}</li>
+                    <li>{paragraph_23x}</li>
+                </ol>
+                <hr></hr>
+
+                {paragraph_2x}
+
+            </div>
+        );
+        ReactDOM.render(
+            element,
+            document.getElementById('root')
+        );
+    </script>
+</body>
+
+</html>

@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta name="author" content="Sebastián Ladino Cano">
+    <meta name="keywords" content="html, examples, homework ">
+    <meta name="description" content="Punto 10">
+    <title></title>
+</head>
+
+<body>
+    <div id="root">
+    </div>
+    <script src="https://unpkg.com/react@16/umd/react.development.js"></script>
+    <script src="https://unpkg.com/react-dom@16/umd/react-dom.development.js"></script>
+    <script src="https://unpkg.com/babel-standalone@6/babel.min.js"></script>
+    <script type="text/babel">
+
+        const data = {
+            title_1: "Recetas.com",
+            text_1: "Bienvenido a nuestro sitio web de gastronomia latina, te invitamos a preparar nuestras recetas",
+            subtitle_1: "Nuevas Recetas",
+            subtitle_2: "**Arroz criollo**",
+            subtitle_3: "Ingredientes",
+            text_2: "salsa de tomate",
+            text_3: "2 cucharadas de aceite 14gr",
+            text_4: "1 cebolla larga picada 45gr",
+            text_5: "2 dientes de ajo finamente picado 3gr",
+            text_6: "1 pimenton rojo picado en cuadritos 60gr",
+            text_7: "1 taza de arroz blanco 225gr",
+            text_8: "1 taza de maiz desgranado 79gr",
+            text_9: "150gr de pechuga de pollo cocinado y desmechado",
+            text_10: "sal algusto",
+            subtitle_4: "Preparacion",
+            text_11: "Celentar en una olla el aceite, sofreir la cebolla junto con el ajo, el pimenton por 3 minutos.",
+            text_12: "adicionar el arroz y continua sofriendo para que se dore.",
+            text_13: "agregar el pollo, el maiz desgranado y las verduras.",
+            text_14: "Mezclar todo, rectificar de sal y dejar cocinar hast que seque.",
+            text_15: "bajar el fuego, tapar la olla y continuar la coccion por 25 minutos mas",
+            text_16: "Esta rica receta fue proporcionada por Maria Paula."
+        }
+
+        const element = (
+            <div>
+                <img src="imagen3.png" width="150" align="left" />
+                <h1>{data.title_1}</h1>
+                <br /><br /><br />
+                <a href="https://www.recetasgratis.net/"> Recetas Principales</a> <a href="https://www.laylita.com/recetas/postres-latinos/"> Postres Latinos</a>
+                <br /><br /><br />
+                <p>{data.text_1}</p>
+                <h2>{data.subtitle_1}</h2>
+                <h3>{data.subtitle_2}</h3>
+                <p>Tiempo de preparacion: <b>45 minutos</b> Numero de porciones <b>4</b></p>
+                <h3>{data.subtitle_3}</h3>
+                <ul><li><b>{data.text_2}</b></li>
+                    <li><b>{data.text_3}</b></li>
+                    <li><b>{data.text_4}</b></li>
+                    <li><b>{data.text_5}</b></li>
+                    <li><b>{data.text_6}</b></li>
+                    <li><b>{data.text_7}</b></li>
+                    <li><b>{data.text_8}</b></li>
+                    <li><b>{data.text_9}</b></li>
+                    <li><b>{data.text_10}</b></li>
+                </ul>
+                <h3>{data.subtitle_4}</h3>
+                <ol><li>{data.text_11}</li>
+                    <li>{data.text_12}</li>
+                    <li>{data.text_13}</li>
+                    <li>{data.text_14}</li>
+                    <li>{data.text_15}</li>
+                </ol>
+                <p>{data.text_16}</p>
+
+            </div>
+        )
+
+
+        ReactDOM.render(
+            element,
+            document.getElementById('root')
+        );
+    </script>
+</body>
+
+</html>

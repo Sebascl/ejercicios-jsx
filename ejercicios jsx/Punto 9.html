@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta name="author" content="Sebastián Ladino Cano">
+    <meta name="keywords" content="html, examples, homework ">
+    <meta name="description" content="Punto 9">
+    <title></title>
+</head>
+
+<body>
+    <div id="root">
+    </div>
+    <script src="https://unpkg.com/react@16/umd/react.development.js"></script>
+    <script src="https://unpkg.com/react-dom@16/umd/react-dom.development.js"></script>
+    <script src="https://unpkg.com/babel-standalone@6/babel.min.js"></script>
+    <script type="text/babel">
+
+        const data9 = {
+            title_1: "Cartelera de vuelos - Aeropuerto el mirador",
+            title_2: "Llegadas",
+            title_3: "Salidas",
+            paragraph_1: "Aerolinea",
+            paragraph_2: "Nro. vuelo",
+            paragraph_3: "Estatus",
+            paragraph_4: "Hora estimada",
+            paragraph_5: "Puerta",
+            paragraph_6: "AIRLAN",
+            paragraph_7: "355",
+            paragraph_8: "Aterrizo",
+            paragraph_9: "Embarcando",
+            paragraph_10: "3",
+            paragraph_11: "1",
+            paragraph_12: "2:45pm",
+            paragraph_13: "2:15pm",
+            paragraph_14: "VIAJAR",
+            paragraph_15: "556",
+            paragraph_16: "RETARDADO",
+            paragraph_17: "3:45pm",
+            paragraph_18: "6",
+            paragraph_19: "AEROVUELO",
+            paragraph_20: "EN VUELO",
+            paragraph_21: "3:45pm",
+            paragraph_22: "8",
+            paragraph_23: "1234"
+            
+
+        }
+        const title_x = <h1>{data9.title_1}</h1>;
+        const subtitle_1x = <h2>{data9.title_2}</h2>;
+        const subtitle_2x = <h2>{data9.title_3}</h2>;
+        const paragraph_x = <p>{data9.paragraph_1}</p>;
+        const paragraph_2x = <p>{data9.paragraph_2}</p>;
+        const paragraph_3x = <p>{data9.paragraph_3}</p>;
+        const paragraph_4x = <p>{data9.paragraph_4}</p>;
+        const paragraph_5x = <p>{data9.paragraph_5}</p>;
+        const paragraph_6x = <p>{data9.paragraph_6}</p>;
+        const paragraph_7x = <p>{data9.paragraph_7}</p>;
+        const paragraph_8x = <p>{data9.paragraph_8}</p>;
+        const paragraph_9x = <p>{data9.paragraph_9}</p>;
+        const paragraph_10x = <p>{data9.paragraph_10}</p>;
+        const paragraph_11x = <p>{data9.paragraph_11}</p>;
+        const paragraph_12x = <p>{data9.paragraph_12}</p>;
+        const paragraph_13x = <p>{data9.paragraph_13}</p>;
+        const paragraph_14x = <p>{data9.paragraph_14}</p>;
+        const paragraph_15x = <p>{data9.paragraph_15}</p>;
+        const paragraph_16x = <p>{data9.paragraph_16}</p>;
+        const paragraph_17x = <p>{data9.paragraph_17}</p>;
+        const paragraph_18x = <p>{data9.paragraph_18}</p>;
+        const paragraph_19x = <p>{data9.paragraph_19}</p>;
+        const paragraph_20x = <p>{data9.paragraph_20}</p>;
+        const paragraph_21x = <p>{data9.paragraph_21}</p>;
+        const paragraph_22x = <p>{data9.paragraph_22}</p>;
+        const paragraph_23x = <p>{data9.paragraph_23}</p>;
+
+        const element = (
+            <div>
+                {title_x}
+                {subtitle_1x}
+                <table border="1">
+                    <thead>
+                        <tr>
+                            <th>{paragraph_x}</th>
+                            <th>{paragraph_2x}</th>
+                            <th>{paragraph_3x}</th>
+                            <th>{paragraph_4x}</th>
+                            <th>{paragraph_5x}</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                      <tr>
+                            <td>{paragraph_6x}</td>
+                            <td>{paragraph_7x}</td>
+                            <td>{paragraph_8x}</td>
+                            <td>{paragraph_12x}</td>
+                            <td>{paragraph_10x}</td>
+                        </tr>
+                    </tbody>  
+                    <tbody>
+                    <tr>
+                            <td>{paragraph_14x}</td>
+                            <td>{paragraph_15x}</td>
+                            <td>{paragraph_16x}</td>
+                            <td>{paragraph_17x}</td>
+                            <td>{paragraph_18x}</td>
+                        </tr>
+                    </tbody>
+                    <tbody>
+                    <tr>
+                            <td>{paragraph_19x}</td>
+                            <td>{paragraph_23x}</td>
+                            <td>{paragraph_20x}</td>
+                            <td>{paragraph_21x}</td>
+                            <td>{paragraph_22x}</td>
+                        </tr>
+                    </tbody>
+                </table>
+                {subtitle_2x}
+                <table border="1">
+                    <thead>
+                        <tr>
+                            <th>{paragraph_x}</th>
+                            <th>{paragraph_2x}</th>
+                            <th>{paragraph_3x}</th>
+                            <th>{paragraph_4x}</th>
+                            <th>{paragraph_5x}</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>{paragraph_6x}</td>
+                            <td>{paragraph_7x}</td>
+                            <td>{paragraph_9x}</td>
+                            <td>{paragraph_13x}</td>
+                            <td>{paragraph_11x}</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        );
+
+
+        ReactDOM.render(
+            element,
+            document.getElementById('root')
+        );
+    </script>
+</body>
+
+</html>

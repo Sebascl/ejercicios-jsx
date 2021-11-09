@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta name="author" content="Sebastián Ladino Cano">
+    <meta name="keywords" content="html, examples, homework ">
+    <meta name="description" content="Punto 3">
+    <title></title>
+</head>
+
+<body>
+    <div id="root">
+    </div>
+    <script src="https://unpkg.com/react@16/umd/react.development.js"></script>
+    <script src="https://unpkg.com/react-dom@16/umd/react-dom.development.js"></script>
+    <script src="https://unpkg.com/babel-standalone@6/babel.min.js"></script>
+    <script type="text/babel">
+
+
+        const data = {
+            title_1: "Página inicial de Juan Tuesta",
+            title_2: "Enlaces favoritos:",
+            paragraph_1: "Bienvenido a mi página personal. Soy un alumno de la Universidad de Deusto y esta es mi página inicial, con la lista de mis enlaces favoritos y otra información de interés",
+            paragraph_2: "Internet",
+            paragraph_3: "Google",
+            paragraph_4: "Aldea global",
+            paragraph_5: "Manual de HTML",
+            paragraph_6: "Juan Tuesta, Universidad de Deusto, marzo 2002.",
+        }
+        const title_x = <h1>{data.title_1}</h1>;
+        const subtitle_x = <h2>{data.title_2}</h2>;
+        const paragraph_x = <p>{data.paragraph_1}</p>;
+        const paragraph_2x = <p>{data.paragraph_2}</p>;
+        const paragraph_3x = <p>{data.paragraph_3}</p>;
+        const paragraph_4x = <p>{data.paragraph_4}</p>;
+        const paragraph_5x = <p>{data.paragraph_5}</p>;
+        const paragraph_6x = <p><i>{data.paragraph_6}</i></p>;
+
+        const element = (
+            <div>
+                {title_x}
+                {paragraph_x}
+                {subtitle_x}
+                <ol>
+                    <li>{paragraph_2x}</li>
+                    <li><a href="">{paragraph_3x}</a></li>
+                    <li>{paragraph_4x}</li>
+                    <li><a href="">{paragraph_5x}</a></li>
+                </ol>
+                {paragraph_6x}
+            </div>
+        );
+
+
+        ReactDOM.render(
+            element,
+            document.getElementById('root')
+        );
+    </script>
+</body>
+
+</html>

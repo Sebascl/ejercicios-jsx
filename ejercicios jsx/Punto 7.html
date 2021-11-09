@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta name="author" content="Sebastián Ladino Cano">
+    <meta name="keywords" content="html, examples, homework ">
+    <meta name="description" content="Punto 7">
+    <title></title>
+</head>
+
+<body>
+    <div id="root">
+    </div>
+    <script src="https://unpkg.com/react@16/umd/react.development.js"></script>
+    <script src="https://unpkg.com/react-dom@16/umd/react-dom.development.js"></script>
+    <script src="https://unpkg.com/babel-standalone@6/babel.min.js"></script>
+    <script type="text/babel">
+
+
+        const data = {
+            title_1: "Destinos Turísticos", title_2: "América",
+            paragraph_1: "Argentina", paragraph_2: "Brasil", paragraph_3: "Chile",
+            paragraph_4: "Colombia", paragraph_5: "Estados Unidos", paragraph_6: "México",
+            paragraph_7: "Perú", paragraph_8: "Venezuela", paragraph_9: "Buenos Aires",
+            paragraph_10: "Bariloche", paragraph_11: "Río de Janeiro", paragraph_12: "Brasilia",
+            paragraph_13: "Santiago", paragraph_14: "Valparaiso", paragraph_15: "Bogotá",
+            paragraph_16: "Cartagena de Indias", paragraph_17: "New York", paragraph_18: "San Francisco",
+            paragraph_19: "Cancún", paragraph_20: "Acapulco", paragraph_21: "Lima",
+            paragraph_22: "Cuzco", paragraph_23: "Margarita", paragraph_24: "Mérida",
+        }
+        const title_x = <h1>{data.title_1}</h1>;
+        const subtitle_x = <h2>{data.title_2}</h2>;
+        const paragraph_x = <h3>{data.paragraph_1}</h3>;
+        const paragraph_2x = <h3>{data.paragraph_2}</h3>;
+        const paragraph_3x = <h3>{data.paragraph_3}</h3>;
+        const paragraph_4x = <h3>{data.paragraph_4}</h3>;
+        const paragraph_5x = <h3>{data.paragraph_5}</h3>;
+        const paragraph_6x = <h3>{data.paragraph_6}</h3>;
+        const paragraph_7x = <h3>{data.paragraph_7}</h3>;
+        const paragraph_8x = <h3>{data.paragraph_8}</h3>;
+        const paragraph_9x = <p>{data.paragraph_9}</p>;
+        const paragraph_10x = <p>{data.paragraph_10}</p>;
+        const paragraph_11x = <p>{data.paragraph_11}</p>;
+        const paragraph_12x = <p>{data.paragraph_12}</p>;
+        const paragraph_13x = <p>{data.paragraph_13}</p>;
+        const paragraph_14x = <p>{data.paragraph_14}</p>;
+        const paragraph_15x = <p>{data.paragraph_15}</p>;
+        const paragraph_16x = <p>{data.paragraph_16}</p>;
+        const paragraph_17x = <p>{data.paragraph_17}</p>;
+        const paragraph_18x = <p>{data.paragraph_18}</p>;
+        const paragraph_19x = <p>{data.paragraph_19}</p>;
+        const paragraph_20x = <p>{data.paragraph_20}</p>;
+        const paragraph_21x = <p>{data.paragraph_21}</p>;
+        const paragraph_22x = <p>{data.paragraph_22}</p>;
+        const paragraph_23x = <p>{data.paragraph_23}</p>;
+        const paragraph_24x = <p>{data.paragraph_24}</p>;
+
+        const element = (
+            <div>
+                {title_x}
+                {subtitle_x}
+                <ol>
+                    <li>{paragraph_x}</li>
+                    <ol>
+                        <li>{paragraph_9x}</li>
+                        <li>{paragraph_10x}</li>
+                    </ol>
+                    <li>{paragraph_2x}</li>
+                    <ol>
+                        <li>{paragraph_11x}</li>
+                        <li>{paragraph_12x}</li>
+                    </ol>
+                    <li>{paragraph_3x}</li>
+                    <ol>
+                        <li>{paragraph_13x}</li>
+                        <li>{paragraph_14x}</li>
+                    </ol>
+                    <li>{paragraph_4x}</li>
+                    <ol>
+                        <li>{paragraph_15x}</li>
+                        <li>{paragraph_16x}</li>
+                    </ol>
+                    <li>{paragraph_5x}</li>
+                    <ol>
+                        <li>{paragraph_17x}</li>
+                        <li>{paragraph_18x}</li>
+                    </ol>
+                    <li>{paragraph_6x}</li>
+                    <ol>
+                        <li>{paragraph_19x}</li>
+                        <li>{paragraph_20x}</li>
+                    </ol>
+                    <li>{paragraph_7x}</li>
+                    <ol>
+                        <li>{paragraph_21x}</li>
+                        <li>{paragraph_22x}</li>
+                    </ol>
+                    <li>{paragraph_8x}</li>
+                    <ol>
+                        <li>{paragraph_23x}</li>
+                        <li>{paragraph_24x}</li>
+                    </ol>
+                </ol>
+            </div>
+        );
+
+        ReactDOM.render(
+            element,
+            document.getElementById('root')
+        );
+    </script>
+</body>
+
+</html>

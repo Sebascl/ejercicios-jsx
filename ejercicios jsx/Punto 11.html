@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta name="author" content="Sebastián Ladino Cano">
+    <meta name="keywords" content="html, examples, homework ">
+    <meta name="description" content="Punto 11">
+    <title></title>
+</head>
+
+<body>
+    <div id="root">
+    </div>
+    <script src="https://unpkg.com/react@16/umd/react.development.js"></script>
+    <script src="https://unpkg.com/react-dom@16/umd/react-dom.development.js"></script>
+    <script src="https://unpkg.com/babel-standalone@6/babel.min.js"></script>
+    <script type="text/babel">
+
+        const data = {
+            title_1: "Registro en nuestra tienda",
+            name: <label for="Nombre">Nombre de usuario</label>,
+            email: <label for="email">Email:</label>,
+            age: <label for="edad">Edad:</label>,
+            gender: <label for="genero">Genero:</label>,
+            recommended: <label for="recomendado">Recomendado por:</label>,
+            comments: <label for="comentario">comentarios:</label>,
+            terms: <label for="terminos">Acepto terminos y condiciones:</label>,
+
+        }
+
+        const element = (
+            <div>
+                <h1>{data.title_1}</h1>
+                <p>{data.name}</p>
+                <p><input type="text" id="Nombre" value="Ej Luis" name="Nombre" /></p>
+                <p>{data.email}</p>
+                <p><input type="text" id="email" value="Ej Luis@gmail.com" name="email" /></p>
+                <p>{data.age}</p>
+                <p><input type="text" id="edad" value="Ej: 21 " name="edad" /></p>
+                <p>{data.gender}</p>
+                <p><input type="radio" id="m" name="Masculino" value="Masculino" />
+                    <label for="m">Masculino</label></p>
+                <p><input type="radio" id="f" name="Femenino" value="Femenino" />
+                    <label for="f">Femenino</label></p>
+                <p>{data.recommended}</p>
+                <select name="recomendado" id="recomendado">
+                    <option value="Google">Google</option>
+                    <option value="otro">otro</option>
+                </select>
+                <p>{data.comments}</p>
+                <textarea name="comentarios" rows="6" cols="28">Escribe aquí tus comentarios</textarea>
+                <p>{data.terminos}</p>
+                <input type="checkbox" id="terminos" name="terminos" value="terminos" />
+                <p><button type="button" onclick="Registrado con exito">Registrar</button></p>
+            </div>
+        )
+
+        ReactDOM.render(
+            element,
+            document.getElementById('root')
+        );
+    </script>
+</body>
+
+</html>
